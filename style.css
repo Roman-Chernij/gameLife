@@ -1,0 +1,31 @@
+body {
+     background-color: rgba(0, 0, 0, 0.17);
+ }
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.holder {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.holder__row {
+    display: flex;
+}
+
+.holder__item {
+    background-color: rgba(0, 0, 0, 0.77);
+    /* background-color: #fff; */
+    /* border: 1px solid #fff; */
+    margin: 1px 1px
+}
+
+
+.holder__item.active {
+    background-color: green;
+}
