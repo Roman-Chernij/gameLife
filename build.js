@@ -103,8 +103,19 @@ class Life {
                     $col02 = (col + 2) > this._grid ? 0: col + 2;
 
                 obj[key].neighbors = [
-                    [`${$row00} ${$col00}`, `${$row01} ${col}`, `${$row02} ${$col02}`],
-                    [`${row} ${$col00}`, `${row} ${col}`, `${row} ${$col02}`]
+                    [
+                        `${$row00} ${$col00}`, 
+                        `${$row01} ${col}`, 
+                        `${$row02} ${$col02}`
+                    ],
+                    [
+                        `${row} ${(col - 1) < 0 ? this._grid:col -1 }`, 
+                        `null`, 
+                        `${row} ${(col + 1) > this._grid ? 0:col + 1}`],
+                    [
+                        `${(row + 1) < this._grid ? 0 : row + 1 } ${(col - 1) < 0 ? this._grid:col -1}`,
+                         `${(row + 1) < this._grid ? 0 : row + 1} ${col}`, 
+                         `${(row + 1) > this._grid ? 0:row + 1} ${(col + 1) > this._grid ? 0:col + 1}`] 
                 ]
             }
 
