@@ -1,11 +1,11 @@
 body {
-     background-color: rgba(0, 0, 0, 0.17);
+     background-color: #fff;
  }
 
 .container {
-    max-width: 1200px;
+    max-width: 1600px;
     width: 100%;
-    margin: 100px auto;
+    margin: 0 auto;
 }
 
 .holder {
@@ -19,13 +19,14 @@ body {
 }
 
 .holder__item {
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: transparent;
     /* background-color: #fff; */
     /* border: 1px solid #fff; */
-    margin: 1px 1px
+    margin: 1px;
+    transition: ease-in-out background-color .3s;
 }
 
 
 .holder__item.active {
-    background-color: green;
+    background-color: #23CC1C;
 }
